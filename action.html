@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title> To-Do Manager </title>
+    <link href = "styleaction.css" rel = "stylesheet">
+  </head>
+  <body>
+
+    <div id="Todo">
+        <h1>To Do List</h1>
+        <form autocomplete = "off">
+         <label for="Add new item:"> Title </label>
+         <input type="text" id="title" placeholder="item goes here..." required>
+         <span> Date: </span>
+         <input type="date" id="dateForm" value="2020-08-03" min="2020-08-03">
+         <button type = "submit"> Add Item </button>
+          <br>
+     </form>
+
+      <h2 id="listHeader">Items</h2>
+      <div id="list">
+      <ul></ul>
+      </div>
+
+     <button id = "clearButton"> Clear All </button>
+
+    </div>
+    <script src = "script.js"></script>
+  </body>
+</html>

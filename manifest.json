@@ -1,0 +1,26 @@
+{
+  "name": "Goal Manager",
+  "description": "An extension that helps you manage and achieve your goals!",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "background": {
+    "service_worker" : "background.js"
+  },
+  "action": {
+    "default_popup": "action.html",
+    "default_icon": "hello.png"
+  },
+  "permissions": ["storage"],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F",
+        "mac": "MacCtrl+Shift+F"
+      },
+      "description": "Opens hello.html"
+    }
+  },
+  "chrome_url_overrides" : {
+    "newtab": "hello.html"
+  }
+}
