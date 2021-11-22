@@ -81,6 +81,7 @@ function refresh() {
                 list.appendChild(tommorrowUl);
                 curUl = tommorrowUl;
             }
+            numberTommorrow++;
         }
         else {
             if (numberLater === 0) {
